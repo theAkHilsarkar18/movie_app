@@ -27,6 +27,11 @@ class _HomescreenState extends State<Homescreen> {
     Homeprovider homeproviderTrue = Provider.of(context, listen: true);
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color(0xff251B37),
+          leading: Icon(Icons.menu,color: Color(0xffFFECEF),),
+          title: Text("IMDB",style: TextStyle(color: Color(0xffFFECEF),)),
+        ),
         resizeToAvoidBottomInset: false,
         backgroundColor: Color(0xff251B37),
         body: Center(
